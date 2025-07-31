@@ -1,0 +1,63 @@
+/* More.css */
+
+.more-container {
+  min-height: 70vh;
+  background-color: #18181b; /* Tailwind's bg-zinc-900 */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.more-heading {
+  font-size: 1.125rem; /* md:text-xl */
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .more-heading {
+    font-size: 1.25rem;
+  }
+}
+
+.mood-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 48rem;
+}
+
+@media (min-width: 640px) {
+  .mood-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .mood-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.mood-button {
+  border: 1px solid #ef4444; /* Tailwind's border-red-500 */
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.mood-button:hover {
+  background-color: #dc2626; /* Tailwind's red-600 */
+}
+
+@media (min-width: 768px) {
+  .mood-button {
+    font-size: 1rem;
+  }
+}

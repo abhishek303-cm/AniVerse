@@ -1,0 +1,80 @@
+/* HomePage.css */
+.homepage {
+  width: 100%;
+  background-color: #121822; /* zinc-900 */
+  padding: 24px 88px;
+}
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  margin: auto;
+  background-color: #374151; /* zinc-700 */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(8px);
+  z-index: 0;
+}
+
+.card-content {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.image-section {
+  width: 33.33%;
+  padding: 16px;
+}
+
+.image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.text-section {
+  width: 66.66%;
+  padding: 16px;
+  color: white;
+}
+
+.text-section h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.text-section p {
+  margin-bottom: 16px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.text-section button {
+  background-color: #db2777; /* red-600 */
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.text-section button:hover {
+  background-color: #ed1a79; /* red-700 */
+}
